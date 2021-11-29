@@ -1,0 +1,9 @@
+What is functional interface?
+An Interface that contains exactly one abstract method is known as functional interface. It can have any number of default, static methods but can contain only one abstract method.Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces.
+
+Why use functional interface?
+we can use lambda expressions to instantiate them and avoid using bulky anonymous class implementation.
+
+Example: Consumer,Predicate,Supplier
+
+
