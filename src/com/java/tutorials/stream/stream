@@ -1,0 +1,10 @@
+What is stream?
+A Stream in Java can be defined as a sequence of elements from a source. The source of elements here refers to a Collection or Array that provides data to the Stream.
+Java streams are designed in such a way that most of the stream operations (called intermediate operations) return a Stream. This helps to create a chain of stream operations. This is called stream pipe-lining.
+
+Why use stream?
+	1.Raise a collection to a stream
+	2.Ride the stream: filter values, transform values, limit the output
+	3.Compose small individual operations
+	4.Collect the result back into a concrete collection
+
