@@ -2,7 +2,7 @@ package com.java.tutorials.functionalInterface;
 
 import java.util.function.Supplier;
 
-import com.java.tutorials.supporClass.Employee;
+import com.java.tutorials.supportClass.Employee;
 
 public class SupplierExample {
 	public static void main(String[] args) {

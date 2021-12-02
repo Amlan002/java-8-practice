@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.java.tutorials.supporClass.User;
-import com.java.tutorials.supporClass.UserDto;
+import com.java.tutorials.supportClass.User;
+import com.java.tutorials.supportClass.UserDto;
 
 public class StreamMapping {
 

@@ -1,11 +1,12 @@
-package com.java.tutorials.supporClass;
+package com.java.tutorials.supportClass;
 
-public class UserDto {
+public class User {
 	private int Id;
 	private String email;
+	private String password;
 	private String name;
 
-	public UserDto() {
+	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -25,6 +26,14 @@ public class UserDto {
 		this.email = email;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -33,15 +42,16 @@ public class UserDto {
 		this.name = name;
 	}
 
-	public UserDto(int id, String email, String name) {
+	public User(int id, String email, String password, String name) {
 		Id = id;
 		this.email = email;
+		this.password = password;
 		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "UserDto [Id=" + Id + ", email=" + email + ", name=" + name + "]";
+		return "User [Id=" + Id + ", email=" + email + ", password=" + password + ", name=" + name + "]";
 	}
 
 }

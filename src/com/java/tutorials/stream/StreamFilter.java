@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.java.tutorials.supporClass.Employee;
+import com.java.tutorials.supportClass.Employee;
 
 public class StreamFilter {
 

@@ -1,4 +1,4 @@
-package com.java.tutorials.supporClass;
+package com.java.tutorials.supportClass;
 
 public class Employee{
 	private int Id;

@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.java.tutorials.supporClass.Employee;
+import com.java.tutorials.supportClass.Employee;
 
 public class StreamSortCustomObject {
 
