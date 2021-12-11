@@ -12,7 +12,7 @@ public class PredicateExample {
 	public static void main(String[] args) {
 		
 		Predicate<Employee> predicate=(emp)-> emp.getAge()>40;
-		boolean result=predicate.test(new Employee(10, 29, 700000, "Amlan"));
+		boolean result=predicate.test(new Employee(10, 41, 700000, "Amlan"));
 		System.out.println("Result is "+result);
 		
 		
@@ -26,10 +26,15 @@ public class PredicateExample {
 			}
 			
 		};
-		predicate2.test(11);
+		
+		Predicate<Integer> p4=(t)->t%2==0;
+		
 		
 		
 		List<Integer> integers=Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+		
+		integers.stream().filter(p4).forEach(n->System.out.println("even no list "+n));
+		
 		Predicate<Integer> predicate3=(x)-> x > 5;
 		Predicate<Integer> predicate4=(x)-> x < 8;
 		integers.stream().filter(predicate3).collect(Collectors.toList()).forEach(System.out::println);

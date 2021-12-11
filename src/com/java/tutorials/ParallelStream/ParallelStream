@@ -1,0 +1,12 @@
+What is parallel streams?
+Java Parallel Streams is a feature of Java 8 and higher, meant for utilizing multiple cores of the processor. Normally any java code has one stream of processing, 
+where it is executed sequentially. Whereas by using parallel streams, we can divide the code into multiple streams that are executed in parallel on separate cores 
+and the final result is the combination of the individual outcomes. The order of execution, however, is not under our control.
+
+Why use parallel streams?
+	1. They should be used when the output of the operation is not needed to be dependent on the order of elements present in source collection (i.e. on which the stream is created)
+	2. Parallel Streams can be used in case of aggregate functions
+	3. Parallel Streams quickly iterate over the large-sized collections
+	4. Parallel Streams can be used if developers have performance implications with the Sequential Streams
+	5. If the environment is not multi-threaded, then Parallel Stream creates thread and can affect the new requests coming in
+

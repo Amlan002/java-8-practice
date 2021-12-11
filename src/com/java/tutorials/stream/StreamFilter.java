@@ -1,6 +1,7 @@
 package com.java.tutorials.stream;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,6 +18,10 @@ public class StreamFilter {
 		System.out.println("============= without using extra list===========");
 		getEmp().stream().filter((p) -> p.getSalary() > 50000)
 				.forEach((y) -> System.out.println("Employee name is " + y.getName()));
+		
+		System.out.println("============= filter by name whos name starts with A===========");
+		getEmp().stream().filter((x) -> x.getName().startsWith("A"))
+				.forEach(y -> System.out.println("name - " + y.getName()));
 
 	}
 

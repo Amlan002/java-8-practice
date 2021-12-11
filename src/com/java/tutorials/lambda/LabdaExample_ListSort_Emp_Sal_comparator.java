@@ -59,11 +59,18 @@ public class LabdaExample_ListSort_Emp_Sal_comparator {
 		System.out.println("===============ascending=======");
 		Collections.sort(employees, (o1,o2) ->(int) (o1.getSalary() - o2.getSalary()));
 		System.out.println(employees);
-
+		System.out.println("==========================XXXXXXXXX-- Using stream1 --XXXXXXXXX==========================");
+		employees.stream().sorted((o1,o2) ->(int) (o1.getSalary() - o2.getSalary())).forEach(System.out::println);
+		System.out.println("==========================XXXXXXXXX-- Using stream2 --XXXXXXXXX==========================");
+		employees.stream().sorted(Comparator.comparing(Employee::getSalary)).forEach(System.out::println);
+		
 		System.out.println("===============descending=======");
 		Collections.sort(employees, (o1,o2) ->(int) (o2.getSalary() - o1.getSalary()));
 		System.out.println(employees);
-
+		System.out.println("==========================XXXXXXXXX-- Using stream1 --XXXXXXXXX==========================");
+		employees.stream().sorted((o1,o2) ->(int) (o2.getSalary() - o1.getSalary())).forEach(System.out::println);
+		System.out.println("==========================XXXXXXXXX-- Using stream2 --XXXXXXXXX==========================");
+		employees.stream().sorted(Comparator.comparing(Employee::getSalary).reversed()).forEach(System.out::println);
 	}
 
 }

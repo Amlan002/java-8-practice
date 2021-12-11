@@ -15,7 +15,11 @@ public class StreamMapping {
 		
 		List<UserDto> userDtos= getUsers().stream().map((User user)->new UserDto(user.getId(), user.getEmail(), user.getName())).collect(Collectors.toList());
 		userDtos.forEach((x)->System.out.println("========user name "+x.getName()));
-	}
+		
+		List<String> mail=getUsers().stream().map(x->x.getEmail()).collect(Collectors.toList());
+		System.out.println("emails are--"+mail);
+		
+ 	}
 
 	private static List<User> getUsers() {
 		List<User> users = new ArrayList<User>();

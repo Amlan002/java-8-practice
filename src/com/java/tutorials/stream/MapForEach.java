@@ -1,4 +1,4 @@
-package com.java.tutorials.foreach;
+package com.java.tutorials.stream;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +22,9 @@ public class MapForEach {
 			System.out.println("Key- "+k);
 			System.out.println("Name- "+v.getName());
 		});
+		
+		System.out.println("==================================");
+		getEmp().entrySet().stream().forEach(obj->System.out.println("Key- "+obj.getKey()+" || name-"+obj.getValue().getName()));
 
 	}
 

@@ -28,6 +28,16 @@ public class ConsumerExample {
 		};
 		
 		consumer.accept(new Employee(10, 30, 65000, "Hanuman"));
+		
+		
+		Consumer<String> consumer2=(input)->System.out.println(input+" Hi======");
+		Consumer<String> consumer3=(input)->System.out.println(input+" Hello=======");
+	
+		consumer2.andThen(consumer3).accept("Amlan");
+		
+		
+		
+	
 	}
 
 }
